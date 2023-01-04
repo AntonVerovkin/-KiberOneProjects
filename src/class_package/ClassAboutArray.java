@@ -59,5 +59,6 @@ public class ClassAboutArray {
         System.out.println("Hello" + " " + names[0][0]
         + " " + names[1][2] + "!"
         );
+
     }
 }
