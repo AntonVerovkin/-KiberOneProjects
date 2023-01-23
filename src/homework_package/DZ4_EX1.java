@@ -8,7 +8,7 @@ public class DZ4_EX1 {
     public static void main(String[] args) {
         int[] myArray = createArrayWithRandomNumber(10);
         System.out.println(Arrays.toString(myArray));
-        System.out.println(Arrays.toString(sortArrayToOddNumbers2(myArray)));
+        //System.out.println(Arrays.toString(sortArrayToOddNumbers2(myArray)));
 
 
 
