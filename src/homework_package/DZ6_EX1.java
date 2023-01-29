@@ -24,13 +24,7 @@ public class DZ6_EX1 {
 
     }
 
-    public static int calculateAverageArrayItem(int[] array){
-        int sum = 0;
-        for (int i = 0; i < array.length; i++){
-            sum += array[i];
-        }
-        return sum / array.length;
-    }
+
 
     public static String[] findAverageShortestLine(String[] array){
 
@@ -45,7 +39,7 @@ public class DZ6_EX1 {
         for (int i = 0; i < array.length; i++){
 
             if (array[i].length() < arraySum){
-                 arrayString = {array[i]};
+             //    arrayString = {array[i]};
             }
         }
 
