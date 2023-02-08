@@ -1,16 +1,18 @@
 package class_package.class_10;
 
-public class Person {
+public class Person implements Ptintable{
     private String name;
     private String surname;
     private int age;
     private int height;
+    private String phoneNumber;
 
-    public Person(String name, String surname, int age, int height) {
+    public Person(String name, String surname, int age, int height, String phoneNumber) {
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.height = height;
+        this.phoneNumber = phoneNumber;
     }
 
     public Person(String name, int i, int age, boolean b) {
@@ -47,4 +49,21 @@ public class Person {
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+
+
+    @Override
+    public String print() {
+        return String.format("Имя: %s;\nФамилия: %s;\nНомер телефона %s.", name, surname, phoneNumber);
+    }
+
+
 }
