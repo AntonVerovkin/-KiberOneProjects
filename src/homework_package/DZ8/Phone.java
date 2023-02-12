@@ -1,15 +1,19 @@
 package homework_package.DZ8;
 
-public class Phone {
+public class Phone implements MemoryUsable{
     private String model;
     private float display;
     private int sizeRAM;
+    private int currentSizeRAM ;
     private boolean isDualCameraSystem;
 
-    public Phone(String model, float display, int sizeRAM, boolean isDualCameraSystem) {
+
+
+    public Phone(String model, float display, int sizeRAM, int currentSizeRAM, boolean isDualCameraSystem) {
         this.model = model;
         this.display = display;
         this.sizeRAM = sizeRAM;
+        this.currentSizeRAM = currentSizeRAM;
         this.isDualCameraSystem = isDualCameraSystem;
     }
 
@@ -44,4 +48,30 @@ public class Phone {
     public void setDualCameraSystem(boolean dualCameraSystem) {
         isDualCameraSystem = dualCameraSystem;
     }
+
+    public int getCurrentSizeRAM() {
+        return currentSizeRAM;
+    }
+
+    public void setCurrentSizeRAM(int currentSizeRAM) {
+        this.currentSizeRAM = currentSizeRAM;
+    }
+
+    @Override
+    public String useMemory() {
+        return"Ты можешь использовать память, пока она не заполнит sizeRAM гб";
+    }
+
+    public String useMemory(Phone currentSizeRAM) {
+        if (getSizeRAM() < this.currentSizeRAM){
+            return getSizeRAM() - this.currentSizeRAM + "гб памяти свободно";
+        } else {
+            return "Памяти не достаточно";
+        }
+
+
+    }
+
+
+
 }
