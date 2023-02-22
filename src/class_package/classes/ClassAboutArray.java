@@ -1,6 +1,4 @@
-package classes;
-
-import java.util.Arrays;
+package class_package.classes;
 
 public class ClassAboutArray {
     public static void main(String[] args) {

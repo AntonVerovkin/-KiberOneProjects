@@ -1,8 +1,5 @@
 package homework_package.DZ8;
 
-import class_package.class_10.Person;
-import class_package.class_10.Student;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, its my new program");

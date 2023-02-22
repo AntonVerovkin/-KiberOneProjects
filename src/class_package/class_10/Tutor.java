@@ -1,6 +1,6 @@
 package class_package.class_10;
 
-public class Tutor extends Person implements Callable{
+public class Tutor extends Person implements Callable {
     private int numberOfClassesHeTeachesTerWeek;
 
 
