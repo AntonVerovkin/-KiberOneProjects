@@ -1,5 +1,7 @@
 package class_package.class_10;
 
+import java.util.Objects;
+
 public class Student extends  Person implements Callable{
     private  int grade;
 
@@ -34,5 +36,23 @@ public class Student extends  Person implements Callable{
     @Override
     public String print() {
         return super.print() + "\nКласс: " + grade;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return (grade == student.grade)
+                && (this.getName() == student.getName())
+                && (this.getSurname() == student.getSurname())
+                && (this.getAge() == student.getAge())
+                && (this.getHeight() == student.getHeight())
+                && (this.getPhoneNumber() == student.getPhoneNumber());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(grade);
     }
 }
