@@ -5,18 +5,18 @@ import java.util.Set;
 
 public class DZ14EX1 {
     public static void main(String[] args) {
-        Set<Integer> Collection = new HashSet<>();
-        Collection.add(32);
-        Collection.add(323);
-        Collection.add(32);
-        Collection.add(332);
-        Collection.add(3333);
-        Collection.add(324);
-        Collection.add(3234);
-        Collection.add(323);
-        Collection.add(3323);
-        Collection.add(33334);
+        Set<Integer> collection = new HashSet<>();
+        collection.add(32);
+        collection.add(323);
+        collection.add(32);
+        collection.add(332);
+        collection.add(3333);
+        collection.add(324);
+        collection.add(3234);
+        collection.add(323);
+        collection.add(3323);
+        collection.add(33334);
 
-        System.out.println(Collection);
+        System.out.println(collection);
     }
 }
